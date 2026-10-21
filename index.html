@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>楽天 訳ありセール速報</title>
+<meta name="description" content="楽天市場の訳あり・セール・人気商品を毎日まとめて紹介しています。">
+<meta property="og:title" content="楽天 訳ありセール速報">
+<meta property="og:description" content="楽天市場の訳あり・セール・人気商品を毎日まとめて紹介しています。">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F5F1; --panel:#FFFFFF; --ink:#13262A; --sub:#5B6F72; --line:#DCE2DE;
+  --red:#C8402F; --ok:#2F8F6B; --blue:#2F6FB0; --gray:#5B6F72; --tag:#E8B931; --tagink:#3A2C00; --soft:#EEF1EC;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{--bg:#0F1C1F;--panel:#172A2E;--ink:#E6EDEA;--sub:#9DB2B0;--line:#2A4449;--soft:#1D3337;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;font-size:16px;line-height:1.7;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit}
+header{background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.hd{max-width:1280px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.logo{font-weight:900;font-size:20px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{font-style:normal;background:var(--red);color:#fff;border-radius:8px;padding:2px 8px;font-size:15px}
+.hd .sp{flex:1}
+.follow{display:inline-flex;align-items:center;gap:8px;background:#0F1419;color:#fff;text-decoration:none;border-radius:999px;padding:8px 16px;font-weight:700;font-size:15px}
+.pr{font-size:13px;color:var(--sub)}
+.wrap{max-width:1280px;margin:0 auto;padding:20px;display:grid;grid-template-columns:260px minmax(0,1fr);gap:24px}
+aside{position:sticky;top:76px;align-self:start}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px}
+.box h3{font-size:15px;margin:0 0 8px;color:var(--sub);font-weight:700}
+.opt{display:flex;justify-content:space-between;align-items:center;width:100%;background:none;border:none;color:var(--ink);font:inherit;font-size:15px;padding:6px 8px;border-radius:8px;cursor:pointer;text-align:left}
+.opt:hover{background:var(--soft)}
+.opt.on{background:var(--ink);color:var(--panel);font-weight:700}
+.opt b{font-weight:500;color:var(--sub);font-size:14px}
+.opt.on b{color:inherit}
+.reset{font:inherit;font-size:14px;background:none;border:1px solid var(--line);border-radius:8px;padding:6px 12px;color:var(--ink);cursor:pointer}
+.days{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;margin-bottom:16px}
+.day{flex:none;text-decoration:none;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;min-width:132px;cursor:pointer;font:inherit;color:var(--ink);text-align:left}
+.day.on{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.day b{display:block;font-size:17px}
+.day small{display:block;color:var(--sub);font-size:13px}
+.day .sv{color:var(--ok);font-weight:700;font-size:14px}
+h1{font-size:26px;margin:0 0 4px}
+.lead{color:var(--sub);margin:0 0 14px}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 16px}
+.stat small{display:block;color:var(--sub);font-size:13px}
+.stat b{font-size:24px;font-weight:900}
+.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.bar input,.bar select{font:inherit;font-size:15px;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.bar input{flex:1;min-width:180px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:transform .15s}
+.card:hover{transform:translateY(-2px)}
+.ph{position:relative;aspect-ratio:1/1;background:var(--soft)}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.badge{position:absolute;left:10px;top:10px;background:var(--red);color:#fff;font-weight:900;font-size:18px;padding:3px 10px;border-radius:8px}
+.badge.pick{background:var(--blue)}.badge.used{background:var(--gray)}
+.cb{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.ty{font-size:13px;color:var(--sub)}
+.nm{font-size:15px;font-weight:500;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.pr2{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-top:auto}
+.price{font-size:22px;font-weight:900}
+.old{color:var(--sub);text-decoration:line-through;font-size:14px}
+.save{color:var(--ok);font-weight:700;font-size:14px}
+.meta{font-size:13px;color:var(--sub);display:flex;justify-content:space-between;gap:8px}
+.go{margin-top:8px;text-align:center;background:#BF0000;color:#fff;border-radius:10px;padding:8px;font-weight:700;font-size:15px}
+.empty{color:var(--sub);padding:40px 0}
+footer{max-width:1280px;margin:0 auto;padding:24px 20px 40px;color:var(--sub);font-size:14px}
+footer a{margin-right:16px}
+.mf{display:none}
+@media (max-width:860px){
+  .wrap{grid-template-columns:1fr}
+  aside{position:static;display:none}
+  aside.open{display:block}
+  .mf{display:inline-block}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .price{font-size:19px}
+}
+</style>
+</head>
+<body>
+<header><div class="hd">
+  <a class="logo" href="./"><i>訳</i>楽天 訳ありセール速報</a>
+  <span class="pr">※当サイトは楽天アフィリエイトを利用した広告（PR）を含みます</span>
+  <span class="sp"></span>
+  <a class="follow" id="follow" href="#" target="_blank" rel="noopener" hidden>X でフォロー</a>
+</div></header>
+
+<div class="wrap">
+  <aside id="side">
+    <div class="box"><h3>種類</h3><div id="fType"></div></div>
+    <div class="box"><h3>価格帯</h3><div id="fPrice"></div></div>
+    <div class="box"><h3>割引率</h3><div id="fOff"></div></div>
+    <button class="reset" id="reset">絞り込みをリセット</button>
+  </aside>
+  <main>
+    <div class="days" id="days" aria-label="日付"></div>
+    <h1 id="title">本日のお得まとめ</h1>
+    <p class="lead" id="lead"></p>
+    <div class="stats" id="stats"></div>
+    <div class="bar">
+      <button class="reset mf" id="openF">絞り込み</button>
+      <input id="q" type="search" placeholder="商品名で探す">
+      <select id="sort"><option value="new">新しい順</option><option value="off">割引率が高い順</option><option value="save">お得額が大きい順</option><option value="cheap">価格が安い順</option><option value="pop">レビューが多い順</option></select>
+    </div>
+    <div class="grid" id="grid"></div>
+  </main>
+</div>
+<footer>
+  <p>掲載価格・割引は紹介時点のものです。購入前に必ず楽天市場の商品ページで最新の価格・在庫・送料をご確認ください。</p>
+  <p id="upd"></p>
+</footer>
+
+<script>
+var DATA = null, day = '', f = { type: 'all', price: 'all', off: 'all' };
+var W = ['日','月','火','水','木','金','土'];
+var PRICE = [['all','すべて',0,1e12],['p1','〜1,000円',0,1000],['p2','1,001〜3,000円',1001,3000],['p3','3,001〜5,000円',3001,5000],['p4','5,001〜10,000円',5001,10000],['p5','10,001円〜',10001,1e12]];
+var OFF = [['all','すべて',0],['o20','20%以上',20],['o30','30%以上',30],['o50','50%以上',50],['o70','70%以上',70]];
+function $(id){ return document.getElementById(id); }
+function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function yen(n){ return Number(n).toLocaleString() + '円'; }
+function md(d){ var p = d.split('-'); var w = W[new Date(Date.UTC(+p[0], +p[1]-1, +p[2])).getUTCDay()]; return (+p[1]) + '/' + (+p[2]) + '（' + w + '）'; }
+function today(){ return new Date(Date.now() + 9*3600e3).toISOString().slice(0,10); }
+function inPrice(it, k){ var r = PRICE.filter(function(x){ return x[0] === k; })[0]; return it.price >= r[2] && it.price <= r[3]; }
+function inOff(it, k){ var r = OFF.filter(function(x){ return x[0] === k; })[0]; return (it.off || 0) >= r[2]; }
+function base(){ return DATA.items.filter(function(it){ return it.date === day; }); }
+function apply(list, skip){
+  return list.filter(function(it){
+    return (skip === 'type' || f.type === 'all' || it.type === f.type) && (skip === 'price' || inPrice(it, f.price)) && (skip === 'off' || inOff(it, f.off));
+  });
+}
+function opts(el, key, defs, test){
+  var list = apply(base(), key);
+  el.innerHTML = defs.map(function(d){
+    var n = d[0] === 'all' ? list.length : list.filter(function(it){ return test(it, d[0]); }).length;
+    return '<button class="opt' + (f[key] === d[0] ? ' on' : '') + '" data-k="' + d[0] + '">' + esc(d[1]) + '<b>' + n + '</b></button>';
+  }).join('');
+  Array.prototype.forEach.call(el.querySelectorAll('.opt'), function(b){ b.onclick = function(){ f[key] = b.getAttribute('data-k'); render(); }; });
+}
+function render(){
+  var types = [['all','すべて'],['訳あり','訳あり・セール'],['おすすめ','人気商品'],['中古','中古']];
+  opts($('fType'), 'type', types, function(it, k){ return it.type === k; });
+  opts($('fPrice'), 'price', PRICE, inPrice);
+  opts($('fOff'), 'off', OFF, inOff);
+  $('days').innerHTML = DATA.days.slice(0, 14).map(function(d){
+    return '<button class="day' + (d.date === day ? ' on' : '') + '" data-d="' + d.date + '"><b>' + md(d.date) + (d.date === today() ? ' 今日' : '') + '</b><small>' + d.count + '件</small><span class="sv">' + yen(d.save) + 'お得</span></button>';
+  }).join('');
+  Array.prototype.forEach.call($('days').querySelectorAll('.day'), function(b){ b.onclick = function(){ day = b.getAttribute('data-d'); history.replaceState(null, '', '?d=' + day); render(); window.scrollTo(0, 0); }; });
+  var all = base(), q = $('q').value.trim().toLowerCase();
+  var list = apply(all).filter(function(it){ return !q || String(it.name).toLowerCase().indexOf(q) >= 0; });
+  var s = $('sort').value;
+  list.sort(function(a, b){
+    if (s === 'off') return (b.off||0) - (a.off||0);
+    if (s === 'save') return (b.save||0) - (a.save||0);
+    if (s === 'cheap') return a.price - b.price;
+    if (s === 'pop') return (b.reviews||0) - (a.reviews||0);
+    return String(b.time).localeCompare(String(a.time));
+  });
+  var isToday = day === today();
+  $('title').textContent = (isToday ? '本日' : md(day)) + 'のお得まとめ ' + all.length + '件';
+  $('lead').textContent = md(day) + 'に紹介した楽天市場の訳あり・セール・人気商品です。';
+  var save = all.reduce(function(a, b){ return a + (b.save || 0); }, 0);
+  var best = all.reduce(function(a, b){ return Math.max(a, b.off || 0); }, 0);
+  $('stats').innerHTML = '<div class="stat"><small>紹介した商品</small><b>' + all.length + '件</b></div><div class="stat"><small>合計お得額</small><b>' + yen(save) + '</b></div><div class="stat"><small>最大割引</small><b>' + best + '%</b></div>';
+  $('grid').innerHTML = list.length ? list.map(function(it){
+    var badge = it.type === 'おすすめ' ? '<span class="badge pick">人気</span>' : it.type === '中古' ? '<span class="badge used">中古</span>' : (it.off ? '<span class="badge">' + it.off + '%OFF</span>' : '');
+    var old = it.maxPrice > it.price ? '<span class="old">' + yen(it.maxPrice) + '</span>' : '';
+    var extra = it.type === 'おすすめ' ? '★' + it.rating + '（' + Number(it.reviews).toLocaleString() + '件）' : (it.save ? '<span class="save">' + yen(it.save) + 'お得</span>' : '');
+    return '<a class="card" href="' + esc(it.url) + '" target="_blank" rel="sponsored noopener">' +
+      '<div class="ph"><img src="' + esc(it.image) + '" alt="" loading="lazy" referrerpolicy="no-referrer">' + badge + '</div>' +
+      '<div class="cb"><span class="ty">' + esc(it.typeLabel) + '・' + esc(it.time) + '</span><span class="nm">' + esc(it.name) + '</span>' +
+      '<div class="pr2"><span class="price">' + yen(it.price) + '</span>' + old + '</div><div class="meta"><span>' + extra + '</span><span>' + esc(it.shop) + '</span></div>' +
+      '<span class="go">楽天市場で見る</span></div></a>';
+  }).join('') : '<p class="empty">条件に合う商品はありません。</p>';
+}
+fetch('data/deals.json?t=' + Date.now()).then(function(r){ return r.json(); }).then(function(d){
+  DATA = d;
+  if (d.site && d.site.x) { $('follow').href = 'https:' + '//x.com/' + encodeURIComponent(d.site.x); $('follow').textContent = 'X @' + d.site.x + ' をフォロー'; $('follow').hidden = false; }
+  var m = location.search.match(/d=(\d{4}-\d{2}-\d{2})/);
+  day = m ? m[1] : today();
+  if (!d.days.some(function(x){ return x.date === day; }) && d.days.length) day = d.days[0].date;
+  $('upd').textContent = '最終更新：' + new Date(d.updatedAt).toLocaleString('ja-JP');
+  $('q').oninput = render; $('sort').onchange = render;
+  $('reset').onclick = function(){ f = { type: 'all', price: 'all', off: 'all' }; $('q').value = ''; render(); };
+  $('openF').onclick = function(){ $('side').classList.toggle('open'); };
+  render();
+}).catch(function(){ $('grid').innerHTML = '<p class="empty">データを読み込めませんでした。少し時間をおいて開き直してください。</p>'; });
+</script>
+</body>
+</html>
