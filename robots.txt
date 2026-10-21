@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /i/
+Sitemap: https://bitmvv.github.io/rakutensale/sitemap.xml
