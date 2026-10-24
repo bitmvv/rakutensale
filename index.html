@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>楽天 訳ありセール速報</title>
-<meta name="description" content="楽天市場の訳あり・セール・人気商品を毎日まとめて紹介しています。">
+<meta name="description" content="楽天市場の訳あり・セール・人気商品を毎日まとめて紹介しています。10/24（土）は5件を掲載。">
 <meta property="og:title" content="楽天 訳ありセール速報">
-<meta property="og:description" content="楽天市場の訳あり・セール・人気商品を毎日まとめて紹介しています。">
+<meta property="og:description" content="楽天市場の訳あり・セール・人気商品を毎日まとめて紹介しています。10/24（土）は5件を掲載。">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,8 +82,66 @@ footer a{margin-right:16px}
   .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
   .price{font-size:19px}
 }
+
+/* ===== モバイル最適化 ===== */
+html{-webkit-text-size-adjust:100%}
+[hidden]{display:none!important}
+img{max-width:100%}
+.shade{display:none}
+.closeF{display:none}
+@media (max-width:860px){
+  body{font-size:15px;padding-top:0}
+  header{padding-top:env(safe-area-inset-top,0px)}
+  .hd{padding:8px 12px;gap:6px 10px}
+  .logo{font-size:17px}
+  .logo i{font-size:13px;padding:1px 7px}
+  .hd .pr{order:3;width:100%;font-size:11px;line-height:1.4}
+  .follow{padding:6px 12px;font-size:13px}
+  .wrap{padding:12px;gap:12px}
+  h1{font-size:20px;line-height:1.4}
+  h2{font-size:18px!important}
+  .lead{font-size:14px;margin-bottom:10px}
+  .days{gap:8px;margin:0 -12px 12px;padding:0 12px 6px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .days::-webkit-scrollbar{display:none}
+  .day{min-width:108px;padding:8px 12px;scroll-snap-align:start}
+  .day b{font-size:15px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+  .stat{padding:8px 10px;text-align:center}
+  .stat small{font-size:11px}
+  .stat b{font-size:17px}
+  .bar{margin-bottom:10px;gap:8px}
+  .bar input{order:-1;width:100%;flex:1 1 100%;min-width:0;font-size:16px;padding:10px 12px}
+  .bar select{flex:1;font-size:16px;padding:10px}
+  .mf{flex:1;min-height:44px;font-weight:700}
+  .grid{gap:8px}
+  .card{border-radius:12px}
+  .card:hover{transform:none}
+  .badge{left:6px;top:6px;font-size:14px;padding:2px 7px}
+  .cb{padding:8px 10px 10px;gap:4px}
+  .ty{font-size:11px}
+  .nm{font-size:13px!important;line-height:1.45;-webkit-line-clamp:2}
+  .price{font-size:18px}
+  .old,.save{font-size:12px}
+  .meta{font-size:11px;flex-direction:column;gap:0}
+  .meta span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .go{padding:9px 6px;font-size:13px;margin-top:6px}
+  /* 絞り込みは下から出るシート */
+  aside{display:block!important;position:fixed!important;left:0;right:0;bottom:0;top:auto!important;z-index:30;max-height:78vh;overflow-y:auto;
+    background:var(--bg);border-radius:18px 18px 0 0;padding:16px 14px calc(16px + env(safe-area-inset-bottom,0px));
+    transform:translateY(105%);transition:transform .25s ease;box-shadow:0 -8px 30px rgba(0,0,0,.25)}
+  aside.open{transform:none}
+  aside::before{content:"";display:block;width:40px;height:4px;border-radius:2px;background:var(--line);margin:0 auto 12px}
+  .opt{min-height:44px;font-size:16px}
+  .closeF{display:block;width:100%;margin-top:10px;min-height:48px;background:var(--ink);color:var(--panel);border:none;border-radius:12px;font:inherit;font-weight:700;font-size:16px;position:sticky;bottom:0;box-shadow:0 -10px 14px var(--bg)}
+  aside .reset{width:100%;min-height:44px}
+  .shade{display:block;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:29;opacity:0;pointer-events:none;transition:opacity .25s}
+  .shade.on{opacity:1;pointer-events:auto}
+  footer{padding:16px 12px calc(28px + env(safe-area-inset-bottom,0px));font-size:13px}
+  footer a{display:inline-block;padding:4px 0}
+}
+@media (max-width:360px){.grid{grid-template-columns:1fr 1fr}.price{font-size:16px}.hd .pr{display:none}}
 </style>
-</head>
+<link rel="canonical" href="https://bitmvv.github.io/rakutensale/"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"10/24（土）のお得まとめ","url":"https://bitmvv.github.io/rakutensale/","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"【10/24～ エントリーでP最大21倍！クーポンで50％OFF＆2個で55％OFF！】 明太子 辛子明太子 お徳用 1kg 訳あり明太子 わけあり 切れ子 バラコ 海鮮 魚卵 ワケあり からし明太子 美味しい 穴あき バラ めんたいこ うまい 切れ子 切子 グルメ ギフト お歳暮 年末年始","url":"https://script.google.com/macros/s/AKfycbwq1Vpg3nBxrdPDJuudlyk57Hmr8GD0Y9iKLV_9OHmhmUqoAzuj9yvK9Kolih70dfV60A/exec?c=47f222bb34&s=web"},{"@type":"ListItem","position":2,"name":"【ダイヤモンド・プラチナ会員さま限定！ちょっと訳あり 賞味期限が短め クーポン利用で50％OFF 10/25 0時〜】2026年12月11日以降 カップ の まま レンジ で 1分 国産野菜の贅沢 スープ 8個 12個 セット 野菜をMOTTO 常温 ｜ 温かい 冷たい ポタージュ 長期保存","url":"https://script.google.com/macros/s/AKfycbwq1Vpg3nBxrdPDJuudlyk57Hmr8GD0Y9iKLV_9OHmhmUqoAzuj9yvK9Kolih70dfV60A/exec?c=dc48a37a00&s=web"},{"@type":"ListItem","position":3,"name":"【ふるさと納税】 訳あり サーモン 切り落とし おさしみ用 【選べる内容量 発送月】500g/1kg/2kg/4kg/6kg 個包装 125g [足利本店 宮城県 気仙沼市 20566344] 定期 定期便 小分け 魚 魚介類 鮭 お刺し身 刺し身 刺身 生 生食 個包装 チリ銀鮭 銀鮭 海鮮 海鮮","url":"https://script.google.com/macros/s/AKfycbwq1Vpg3nBxrdPDJuudlyk57Hmr8GD0Y9iKLV_9OHmhmUqoAzuj9yvK9Kolih70dfV60A/exec?c=610c2aabe2&s=web"},{"@type":"ListItem","position":4,"name":"ZPS 【期間限定52%OFF！8,000円→3,790円！】 5種から選べる スーパージャンボクーヘン5個 1個450gの超ド級バームクーヘン5個 2026 バームクーヘン 訳あり 送料無料 在庫処分 人気 C 202610b","url":"https://script.google.com/macros/s/AKfycbwq1Vpg3nBxrdPDJuudlyk57Hmr8GD0Y9iKLV_9OHmhmUqoAzuj9yvK9Kolih70dfV60A/exec?c=36c7ed09c5&s=web"},{"@type":"ListItem","position":5,"name":"＼50％OFFクーポン発行中／【予約商品】【12月上旬‐中旬お届け予定】訳あり 長いも 送料無料 10kg 北海道産 トロロイモ 山いも ながいも 長芋 ナガイモ 滋養強壮 山かけ スーパーセール■長いも●","url":"https://script.google.com/macros/s/AKfycbwq1Vpg3nBxrdPDJuudlyk57Hmr8GD0Y9iKLV_9OHmhmUqoAzuj9yvK9Kolih70dfV60A/exec?c=64237e7288&s=web"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"楽天 訳ありセール速報","url":"https://bitmvv.github.io/rakutensale/"}</script></head>
 <body>
 <header><div class="hd">
   <a class="logo" href="./"><i>訳</i>楽天 訳ありセール速報</a>
@@ -92,12 +150,14 @@ footer a{margin-right:16px}
   <a class="follow" id="follow" href="#" target="_blank" rel="noopener" hidden>X でフォロー</a>
 </div></header>
 
+<div class="shade" id="shade"></div>
 <div class="wrap">
   <aside id="side">
     <div class="box"><h3>種類</h3><div id="fType"></div></div>
     <div class="box"><h3>価格帯</h3><div id="fPrice"></div></div>
     <div class="box"><h3>割引率</h3><div id="fOff"></div></div>
     <button class="reset" id="reset">絞り込みをリセット</button>
+    <button class="closeF" id="closeF">閉じて結果を見る</button>
   </aside>
   <main>
     <div class="days" id="days" aria-label="日付"></div>
@@ -109,12 +169,12 @@ footer a{margin-right:16px}
       <input id="q" type="search" placeholder="商品名で探す">
       <select id="sort"><option value="new">新しい順</option><option value="off">割引率が高い順</option><option value="save">お得額が大きい順</option><option value="cheap">価格が安い順</option><option value="pop">レビューが多い順</option></select>
     </div>
-    <div class="grid" id="grid"></div>
+    <div class="grid" id="grid"><a class="card" href="https://script.google.com/macros/s/AKfycbwq1Vpg3nBxrdPDJuudlyk57Hmr8GD0Y9iKLV_9OHmhmUqoAzuj9yvK9Kolih70dfV60A/exec?c=47f222bb34&amp;s=web" target="_blank" rel="sponsored noopener"><div class="ph"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dining-shioso/cabinet/09036675/11416841/imgrc0107938292.jpg?_ex=600x600" alt="【10/24～ エントリーでP最大21倍！クーポンで50％OFF＆2個で55％OFF！】 明太子 辛子明太子 お徳用 1kg 訳あり明太子 わけあり 切れ子 バ" loading="lazy" referrerpolicy="no-referrer"><span class="badge">55%OFF</span></div><div class="cb"><span class="ty">訳あり・セール・18:00</span><h3 class="nm" style="margin:0;font-size:15px">【10/24～ エントリーでP最大21倍！クーポンで50％OFF＆2個で55％OFF！】 明太子 辛子明太子 お徳用 1kg 訳あり明太子 わけあり 切れ子 バラコ 海鮮 魚卵 ワケあり からし明太子 美味しい 穴あき バラ めんたいこ うまい 切れ子 切子 グルメ ギフト お歳暮 年末年始</h3><div class="pr2"><span class="price">6,998円</span><span class="old">15,551円</span></div><div class="meta"><span><span class="save">8,553円お得</span></span><span>港ダイニングしおそう</span></div><span class="go">楽天市場で見る</span></div></a><a class="card" href="https://script.google.com/macros/s/AKfycbwq1Vpg3nBxrdPDJuudlyk57Hmr8GD0Y9iKLV_9OHmhmUqoAzuj9yvK9Kolih70dfV60A/exec?c=dc48a37a00&amp;s=web" target="_blank" rel="sponsored noopener"><div class="ph"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/monmarche/cabinet/set-soup/variety/8v-2610_01.jpg?_ex=600x600" alt="【ダイヤモンド・プラチナ会員さま限定！ちょっと訳あり 賞味期限が短め クーポン利用で50％OFF 10/25 0時〜】2026年12月11日以降 カップ の ま" loading="lazy" referrerpolicy="no-referrer"><span class="badge">50%OFF</span></div><div class="cb"><span class="ty">訳あり・セール・13:00</span><h3 class="nm" style="margin:0;font-size:15px">【ダイヤモンド・プラチナ会員さま限定！ちょっと訳あり 賞味期限が短め クーポン利用で50％OFF 10/25 0時〜】2026年12月11日以降 カップ の まま レンジ で 1分 国産野菜の贅沢 スープ 8個 12個 セット 野菜をMOTTO 常温 ｜ 温かい 冷たい ポタージュ 長期保存</h3><div class="pr2"><span class="price">6,480円</span><span class="old">12,960円</span></div><div class="meta"><span><span class="save">6,480円お得</span></span><span>野菜をMOTTO 楽天市場店</span></div><span class="go">楽天市場で見る</span></div></a><a class="card" href="https://script.google.com/macros/s/AKfycbwq1Vpg3nBxrdPDJuudlyk57Hmr8GD0Y9iKLV_9OHmhmUqoAzuj9yvK9Kolih70dfV60A/exec?c=610c2aabe2&amp;s=web" target="_blank" rel="sponsored noopener"><div class="ph"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/f042056-kesennuma/cabinet/2026_2/20566344a.jpg?_ex=600x600" alt="【ふるさと納税】 訳あり サーモン 切り落とし おさしみ用 【選べる内容量 発送月】500g/1kg/2kg/4kg/6kg 個包装 125g [足利本店 宮城" loading="lazy" referrerpolicy="no-referrer"><span class="badge">88%OFF</span></div><div class="cb"><span class="ty">訳あり・セール・12:00</span><h3 class="nm" style="margin:0;font-size:15px">【ふるさと納税】 訳あり サーモン 切り落とし おさしみ用 【選べる内容量 発送月】500g/1kg/2kg/4kg/6kg 個包装 125g [足利本店 宮城県 気仙沼市 20566344] 定期 定期便 小分け 魚 魚介類 鮭 お刺し身 刺し身 刺身 生 生食 個包装 チリ銀鮭 銀鮭 海鮮 海鮮丼 魚介 旬 秋</h3><div class="pr2"><span class="price">9,500円</span><span class="old">78,000円</span></div><div class="meta"><span><span class="save">68,500円お得</span></span><span>宮城県気仙沼市</span></div><span class="go">楽天市場で見る</span></div></a><a class="card" href="https://script.google.com/macros/s/AKfycbwq1Vpg3nBxrdPDJuudlyk57Hmr8GD0Y9iKLV_9OHmhmUqoAzuj9yvK9Kolih70dfV60A/exec?c=36c7ed09c5&amp;s=web" target="_blank" rel="sponsored noopener"><div class="ph"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/shitamachibaum/cabinet/12561605/2512_sjk5_52_thm.jpg?_ex=600x600" alt="ZPS 【期間限定52%OFF！8,000円→3,790円！】 5種から選べる スーパージャンボクーヘン5個 1個450gの超ド級バームクーヘン5個 2026 " loading="lazy" referrerpolicy="no-referrer"><span class="badge">53%OFF</span></div><div class="cb"><span class="ty">訳あり・セール・09:00</span><h3 class="nm" style="margin:0;font-size:15px">ZPS 【期間限定52%OFF！8,000円→3,790円！】 5種から選べる スーパージャンボクーヘン5個 1個450gの超ド級バームクーヘン5個 2026 バームクーヘン 訳あり 送料無料 在庫処分 人気 C 202610b</h3><div class="pr2"><span class="price">3,790円</span><span class="old">8,000円</span></div><div class="meta"><span><span class="save">4,210円お得</span></span><span>下町バームクーヘン 楽天市場店</span></div><span class="go">楽天市場で見る</span></div></a><a class="card" href="https://script.google.com/macros/s/AKfycbwq1Vpg3nBxrdPDJuudlyk57Hmr8GD0Y9iKLV_9OHmhmUqoAzuj9yvK9Kolih70dfV60A/exec?c=64237e7288&amp;s=web" target="_blank" rel="sponsored noopener"><div class="ph"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/meiji-ya/cabinet/02830953/imgrc0073163385.jpg?_ex=600x600" alt="＼50％OFFクーポン発行中／【予約商品】【12月上旬‐中旬お届け予定】訳あり 長いも 送料無料 10kg 北海道産 トロロイモ 山いも ながいも 長芋 ナガイ" loading="lazy" referrerpolicy="no-referrer"><span class="badge">50%OFF</span></div><div class="cb"><span class="ty">訳あり・セール・07:00</span><h3 class="nm" style="margin:0;font-size:15px">＼50％OFFクーポン発行中／【予約商品】【12月上旬‐中旬お届け予定】訳あり 長いも 送料無料 10kg 北海道産 トロロイモ 山いも ながいも 長芋 ナガイモ 滋養強壮 山かけ スーパーセール■長いも●</h3><div class="pr2"><span class="price">9,600円</span><span class="old">19,200円</span></div><div class="meta"><span><span class="save">9,600円お得</span></span><span>明治屋 北海道の野菜&amp;食品</span></div><span class="go">楽天市場で見る</span></div></a></div>
   </main>
 </div>
 <footer>
   <p>掲載価格・割引は紹介時点のものです。購入前に必ず楽天市場の商品ページで最新の価格・在庫・送料をご確認ください。</p>
-  <p id="upd"></p>
+  <p style="font-weight:700;margin-bottom:4px">過去のまとめ</p><p style="line-height:2.2"><a href="d/2026-10-24.html">10/24（土）</a><a href="d/2026-10-23.html">10/23（金）</a><a href="d/2026-10-22.html">10/22（木）</a><a href="d/2026-10-21.html">10/21（水）</a></p><p id="upd"></p>
 </footer>
 
 <script>
@@ -154,6 +214,8 @@ function render(){
   Array.prototype.forEach.call($('days').querySelectorAll('.day'), function(b){ b.onclick = function(){ day = b.getAttribute('data-d'); history.replaceState(null, '', '?d=' + day); render(); window.scrollTo(0, 0); }; });
   var all = base(), q = $('q').value.trim().toLowerCase();
   var list = apply(all).filter(function(it){ return !q || String(it.name).toLowerCase().indexOf(q) >= 0; });
+  var nf = ['type','price','off'].filter(function(k){ return f[k] !== 'all'; }).length;
+  $('openF').textContent = '絞り込み' + (nf ? '（' + nf + '）' : ''); $('closeF').textContent = list.length + '件を表示';
   var s = $('sort').value;
   list.sort(function(a, b){
     if (s === 'off') return (b.off||0) - (a.off||0);
@@ -188,7 +250,8 @@ fetch('data/deals.json?t=' + Date.now()).then(function(r){ return r.json(); }).t
   $('upd').textContent = '最終更新：' + new Date(d.updatedAt).toLocaleString('ja-JP');
   $('q').oninput = render; $('sort').onchange = render;
   $('reset').onclick = function(){ f = { type: 'all', price: 'all', off: 'all' }; $('q').value = ''; render(); };
-  $('openF').onclick = function(){ $('side').classList.toggle('open'); };
+  function sheet(on){ $('side').classList.toggle('open', on); $('shade').classList.toggle('on', on); document.body.style.overflow = on ? 'hidden' : ''; }
+  $('openF').onclick = function(){ sheet(true); }; $('closeF').onclick = function(){ sheet(false); }; $('shade').onclick = function(){ sheet(false); };
   render();
 }).catch(function(){ $('grid').innerHTML = '<p class="empty">データを読み込めませんでした。少し時間をおいて開き直してください。</p>'; });
 </script>
